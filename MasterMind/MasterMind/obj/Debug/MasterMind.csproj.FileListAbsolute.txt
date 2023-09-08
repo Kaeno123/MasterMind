@@ -1,0 +1,8 @@
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.AssemblyReference.cache
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.SuggestedBindingRedirects.cache
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
