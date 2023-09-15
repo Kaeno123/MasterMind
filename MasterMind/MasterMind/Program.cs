@@ -14,72 +14,83 @@ namespace MasterMind
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            byte numberOfCoulour = 6;
-            int numberOfChances = 10;
-            string essai1;
-            string ok;
-            string MaPo;
+            Random random = new Random();
 
-            //texte de Bienvenue et introduction au jeu
-            Console.WriteLine("Bienvenue sur MasterMind !");
-            Console.WriteLine("Couleurs possibles: GYWRBMC");
-            Console.WriteLine("Devine le code en 4 couleurs.");
+            string goal = "grws";
+            string essai = "";
+            string Ok;
+            string MP;
+            string reTry = "oui";
+            int win;
 
-            //
-            Console.Write("Essai 1: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+            while (reTry == "oui")
+            {
+                win = 0;
+                //texte de Bienvenue et introduction au jeu
+                Console.WriteLine("\nBienvenue sur MasterMind !");
+                Console.WriteLine("Couleurs possibles: GYWRBMC");
+                Console.WriteLine("Devine le code en 4 couleurs.\n");
 
-            Console.Write("Essai 2: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+                for (int numberTry = 1; numberTry <= 11 && win == 0; numberTry++)
+                {
+                    //Si l'utilisateur gagne
+                    if (essai == goal)
+                    {
+                        numberTry = numberTry - 1;
+                        Console.WriteLine("\nBravo, vous avez Gagnez en " + numberTry + " essais !! :)");
+                        Console.Write("voulez-vous refaire ?\nMettez oui ou non: ");
+                        
+                        
+                        reTry = Console.ReadLine();
 
-            Console.Write("Essai 3: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+                        while (reTry != "oui" && reTry != "non")
+                        {
 
-            Console.Write("Essai 4: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+                            Console.WriteLine("\nVous n'avez pas écrit les mots attendus\nVeuillez écrire oui ou non: ");
+                            reTry = Console.ReadLine();
+                         
+                        }
+                        win = 1;
 
-            Console.Write("Essai 5: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+                    }
 
-            Console.Write("Essai 6: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
+                    //Affiche ce code si l'utilisateur perd après 10 essais
+                    else if (numberTry == 11 && essai != goal)
+                    {
+                        Console.WriteLine("\nDommage, vous avez perdu :/");
+                        Console.Write("voulez-vous réessayer ?\nMettez oui ou non: ");
+                        reTry = Console.ReadLine();
 
-            Console.Write("Essai 7: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
-
-            Console.Write("Essai 8: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
-
-            Console.Write("Essai 9: ");
-            essai1 = Console.ReadLine();
-            Console.WriteLine("=>Ok: ");
-            Console.WriteLine("Mauvaise position: ");
-
-            Console.Write("Essai 10: ");
-            essai1 = Console.ReadLine();
-            
+                        while (reTry != "oui" && reTry != "non")
+                        {
+                            
+                                Console.WriteLine("\nVous n'avez pas écrit les mots attendus\nVeuillez écrire oui ou non: ");
+                                reTry = Console.ReadLine();
+                            
+                        }
 
 
 
+                    }
+
+                    //éxécute ce code tant que l'utilisateur ne trouve pas le code ou fait moins de 10 essais
+                    else
+                    {
+                        Console.Write("\nEssai " + numberTry + " : ");
+                        essai = Console.ReadLine();
+                        Console.WriteLine("\n=>Ok: ");
+                        Console.WriteLine("Mauvaise position: ");
+                       
+                    }
 
 
-            Console.ReadLine();
+
+                }
+            }
+
+
+
+
         }
     }
 }
