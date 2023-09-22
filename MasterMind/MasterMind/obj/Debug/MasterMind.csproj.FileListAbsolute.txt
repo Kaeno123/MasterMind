@@ -6,3 +6,11 @@ D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.cs
 D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
 D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
 D:\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.AssemblyReference.cache
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.SuggestedBindingRedirects.cache
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
