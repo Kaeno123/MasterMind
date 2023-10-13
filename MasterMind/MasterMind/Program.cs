@@ -24,15 +24,12 @@ namespace MasterMind
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("\n*******************************\nBIENVENUE SUR MASTERMIND !");
             Console.WriteLine("*******************************\n");
-            Console.WriteLine("1. Mode normal\n2. Mode facile\n Insérez le chiffre du mode auquel vous souhaitez jouer: ");
+            Console.Write("1. Mode normal\n2. Mode facile\n3. Quitter\n\nInsérez le chiffre du mode auquel vous souhaitez jouer: ");
             Console.ResetColor();
 
 
-            while (choice != "1" && choice != "2")
+            while (choice != "1" && choice != "2" && choice !="3")
             {
-
-
-
                 choice = Console.ReadLine();
 
                 if (choice == "1")
@@ -42,6 +39,10 @@ namespace MasterMind
                 else if (choice == "2")
                 {
                     easymode();
+                }
+                else if (choice == "3")
+                {
+                    
                 }
                 else
                 {
@@ -57,6 +58,9 @@ namespace MasterMind
 
             void normalmode()
             {
+                //clean the console
+                Console.Clear();
+
                 //launch of the game
                 while (reTry == "oui")
                 {
@@ -164,7 +168,6 @@ namespace MasterMind
 
                             //table that divide each character of the combination
                             char[] motsepa = new char[essai.Length];
-
 
                             for (int i = 0; i < 4; i++)
                             {
@@ -202,7 +205,9 @@ namespace MasterMind
             }
             void easymode()
             {
-                
+                //clean the console
+                Console.Clear();
+
                 //launch of the game
                 while (reTry == "oui")
                 {
@@ -301,6 +306,8 @@ namespace MasterMind
                         //do this code while the user doesn't find the goal or do less than 10 try
                         else
                         {
+                            Console.WriteLine(finalgoal);
+
                             int Ok = 0;
                             int MP = 0;
                             Console.Write("\nEssai " + numberTry + " : ");
@@ -310,11 +317,15 @@ namespace MasterMind
 
                             //table that divide each character of the combination
                             char[] motsepa = new char[essai.Length];
+                            char[] restMotsepa = new char[essai.Length];
+                            char[] goalsa = new char[essai.Length];
+                            char[] Restgoalsa = new char[essai.Length];
 
 
                             for (int i = 0; i < 4; i++)
                             {
                                 motsepa[i] = (char)essai[i];
+                                goalsa[i] =Convert.ToChar(goal[i]);
                             }
 
                             //for color that is in the right position
@@ -323,22 +334,28 @@ namespace MasterMind
                                 if (motsepa[i] == Convert.ToChar(goal[i]))
                                 {
                                     Ok = Ok + 1;
+                                    restMotsepa[i] = 'Z';
+                                    goalsa[i] = 'Y';
+                                }
+                                else
+                                {
+                                    restMotsepa[i] = motsepa[i];
+                                    Restgoalsa[i] = goalsa[i];
                                 }
 
                             }
 
                             //for bad position
-                            for (int i = 0; i < 4; i++)
+                            for (int i = 0; i < restMotsepa.Length; i++)
                             {
-                                for (int j = 0; j < goal.Length; j++)
+                                for (int j = 0; j < restMotsepa.Length; j++)
                                 {
-                                    if (motsepa[i] == Convert.ToChar(goal[j]) && motsepa[j] != Convert.ToChar(goal[j]))
+                                    if (restMotsepa[i] == (Restgoalsa[j]) && restMotsepa[j] != (Restgoalsa[j]))
                                     {
                                         MP = MP + 1;
                                     }
                                 }
                             }
-
                             Console.WriteLine("\n=>Ok: " + Ok);
                             Console.WriteLine("Mauvaise position: " + MP);
                         }
