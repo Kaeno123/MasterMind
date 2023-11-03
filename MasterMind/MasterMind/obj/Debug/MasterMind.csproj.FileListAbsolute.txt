@@ -14,3 +14,10 @@ D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\Ma
 D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
 D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
 D:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.AssemblyReference.cache
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+E:\Module 403\Projet MasterMind\GitMasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
