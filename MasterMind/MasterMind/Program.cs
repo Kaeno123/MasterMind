@@ -146,7 +146,6 @@ namespace MasterMind
                         if (m == 1)
                         {
                             //do this code while the user doesn't find the goal or do less than 10 try
-                            Console.WriteLine(finalgoal + " : POUR LE TEST");
                             int Ok = 0;
                             int MP = 0;
                             
@@ -217,8 +216,7 @@ namespace MasterMind
                         }                       
                         else if (m == 2)
                         {
-                            //do this code while the user doesn't find the goal or do less than 10 try
-                            Console.WriteLine(finalgoal + " : POUR LE TEST");
+                            //do this code while the user doesn't find the goal or do less than 10 try                   
                             int MP = 0;
                             Console.ForegroundColor = ConsoleColor.Blue;
                             Console.Write("\nEssai " + numberTry + " : ");
@@ -350,8 +348,7 @@ namespace MasterMind
                         Console.WriteLine();
                     }
 
-                }
-                                
+                }                                
             }
         }
     }
